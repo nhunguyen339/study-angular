@@ -1,0 +1,4 @@
+- Structural directive is responsibile for HTML layout , they shapre or reshape the HTML structural, typucally by adding, removing or manipulating elements
+- Only can apply 1 structural directive for a element. ex:use ngIf and ngFor togther. solution for this use case: put the *ngIf on a container element that wraps the *ngFor element. One or both elements can be an ng-container so you don't have to introduce extra levels of HTML.
+- The different between hide and remove DOM is the the component can still listen the event, the behavior can continue , Angular keep checking. In other hand, hide element is convinent when show element agian is quick, it ready to display, no need to re-initial
+- NgSwitch itself is not a structural directive. It's an attribute directive that controls the behavior of the other two switch directives. That's why you write [ngSwitch], never *ngSwitch.

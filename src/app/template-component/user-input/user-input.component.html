@@ -1,0 +1,16 @@
+<input #box
+  type="text"
+  (keyup.enter)="onUpdate(box.value)"
+  (blur)="onUpdate(box.value); box.value = ''"
+>
+<button (click)="onUpdate(box.value)">add</button>
+<p style="color: red">{{ message }}</p>
+Angular only update binding(screeen) only when it do something respone to the async event
+<p *ngFor="let item of boxes">{{  item }}</p>
+
+key:
+<ul>
+    <li>- try keep the template simple</li>
+    <li>- use value of input by using the variable template</li>
+    <li>- Pass value to event, not pass element</li>
+</ul>

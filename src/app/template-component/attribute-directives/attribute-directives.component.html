@@ -1,0 +1,24 @@
+<form action="">
+    <div>
+        <label for="">Orange</label>
+        <input name="color" type="radio" (click)="color='orange'"/>
+    </div>
+    <div>
+        <label for="">pink</label>
+        <input name="color" type="radio" (click)="color='pink'"/>
+    </div>
+    <div>
+        <label for="">green</label>
+        <input name="color" type="radio" (click)="color='green'"/>
+    </div>
+</form>
+
+you can use appHighlight with 2 purpose: apply directive and binding input
+<p [appHighlight]='color' defaultColor="blue">result of color</p>
+<p [appHighlight]='color'>result of color</p>
+
+key:
+3 type of directive
+- Components—directives with a template.
+- Structural directives—change the DOM layout by adding and removing DOM elements. ex: ngIf, ngFor
+- Attribute directives—change the appearance or behavior of an element, component, or another directive. ex: directive custume in this component
