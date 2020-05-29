@@ -27,10 +27,9 @@
 
 
 => If you mutate the array, no pipe is invoked and the display isn't updated; if you replace the array, the pipe executes and the display is updated.
-It like the state in React, state is tranform into another value, so if you not mutate the state, it do not know what is updated.
-
+<br>
 Impure pipe:
 Angular executes an impure pipe during every component change detection cycle. An impure pipe is called often, as often as every keystroke or mouse-move.
-
+<br>
 Pure pipe:
 Angular executes a pure pipe only when it detects a pure change to the input value. A pure change is either a change to a primitive input value (String, Number, Boolean, Symbol) or a changed object reference (Date, Array, Function, Object).

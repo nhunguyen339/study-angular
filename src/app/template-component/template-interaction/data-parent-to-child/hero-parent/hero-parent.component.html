@@ -1,0 +1,8 @@
+<h1>{{ master }} controls {{ heroes.length }} heros:</h1>
+<b>Agree: {{agree}}, disagree: {{disagree}}</b>
+<app-hero-child
+    *ngFor="let hero of heroes"
+    [master]="master"
+    [hero]='hero'
+    (voted)="onVoted($event)"
+></app-hero-child>
